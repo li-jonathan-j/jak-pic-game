@@ -1,26 +1,59 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ImageGrid from './ImageGrid';
+import GameInput from './GameInput';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
 
-export default App;
+  constructor() {
+    super();
+
+    this.state = {
+      guess: '',
+      answer: '',
+      success: true,
+      gameActive: false,
+    }
+  }
+
+  startGame = () => {
+    console.log('startgame');
+    this.setState({
+        guess: '',
+        answer: 'corgi',
+        gameActive: true,
+        success: false,
+    })
+  }
+
+  endGame = (correct) => {
+    console.log('end game', correct);
+    this.setState({
+      gameActive: false,
+      success: correct
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          Welcome to the pic game!
+        </header>
+
+        <ImageGrid gameActive={this.state.gameActive}></ImageGrid>
+        <GameInput 
+            startGame={this.startGame} 
+            endGame={this.endGame} 
+            gameState={this.state}>
+        </GameInput>
+
+        <footer className="footer">
+          Developed by J.A.K. studios
+        </footer>
+      </div>
+      );
+    }
+  }
+
+  export default App;

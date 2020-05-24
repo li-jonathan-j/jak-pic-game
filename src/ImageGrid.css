@@ -1,0 +1,8 @@
+.Image-Gallery {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.Grid-image {
+    max-height: 50vh;
+}
