@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jak-pic-game/static/css/main.749e20b6.chunk.css",
+    "main.js": "/jak-pic-game/static/js/main.b506511c.chunk.js",
+    "main.js.map": "/jak-pic-game/static/js/main.b506511c.chunk.js.map",
+    "runtime-main.js": "/jak-pic-game/static/js/runtime-main.31fd385d.js",
+    "runtime-main.js.map": "/jak-pic-game/static/js/runtime-main.31fd385d.js.map",
+    "static/js/2.80747501.chunk.js": "/jak-pic-game/static/js/2.80747501.chunk.js",
+    "static/js/2.80747501.chunk.js.map": "/jak-pic-game/static/js/2.80747501.chunk.js.map",
+    "index.html": "/jak-pic-game/index.html",
+    "precache-manifest.946f23cb12c0200fa220dd3ec10b26b0.js": "/jak-pic-game/precache-manifest.946f23cb12c0200fa220dd3ec10b26b0.js",
+    "service-worker.js": "/jak-pic-game/service-worker.js",
+    "static/css/main.749e20b6.chunk.css.map": "/jak-pic-game/static/css/main.749e20b6.chunk.css.map",
+    "static/js/2.80747501.chunk.js.LICENSE.txt": "/jak-pic-game/static/js/2.80747501.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.31fd385d.js",
+    "static/js/2.80747501.chunk.js",
+    "static/css/main.749e20b6.chunk.css",
+    "static/js/main.b506511c.chunk.js"
+  ]
+}
